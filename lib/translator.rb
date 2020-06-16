@@ -1,5 +1,5 @@
 # require modules here
-require "pry"
+
 def load_library(file_path)
   my_hash = {}
   require "yaml"
@@ -23,7 +23,6 @@ end
 
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
- # binding.pry
   my_hash.each do |key, value|
     if my_hash[key][:japanese] == emoticon
       return key
