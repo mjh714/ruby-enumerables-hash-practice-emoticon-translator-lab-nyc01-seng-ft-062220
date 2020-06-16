@@ -10,7 +10,7 @@ def load_library(file_path)
   end
   my_hash
 end
-
+require
 def get_japanese_emoticon(file_path, emoticon)
    my_hash = load_library(file_path)
     my_hash.each do |key, value|
@@ -24,6 +24,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
+  binding.pry
   my_hash.each do |key, value|
     if my_hash[:japanese][value]
       my_hash[:english]
