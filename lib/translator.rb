@@ -1,5 +1,5 @@
 # require modules here
-
+require "pry"
 def load_library(file_path)
   my_hash = {}
   require "yaml"
@@ -10,7 +10,7 @@ def load_library(file_path)
   end
   my_hash
 end
-require
+
 def get_japanese_emoticon(file_path, emoticon)
    my_hash = load_library(file_path)
     my_hash.each do |key, value|
