@@ -26,7 +26,7 @@ def get_english_meaning(file_path, emoticon)
   my_hash = load_library(file_path)
  # binding.pry
   my_hash.each do |key, value|
-    if my_hash[:key][:japanese] == emoticon
+    if my_hash[key][:japanese] == emoticon
       return key
     else
  "Sorry, that emoticon was not found"
